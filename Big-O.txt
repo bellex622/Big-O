@@ -1,15 +1,24 @@
 Step One: Simplifying Expressions»
 Simplify the following big O expressions as much as possible:
 
-O(n + 10) O(n)
-O(100 × n) O(n)
-O(25) O(1)
-O(n2 + n3) O(n^3)
-O(n + n + n + n) O(n)
-O(1000 × log(n) + n) O(log(n))
-O(1000 × n × log(n) + n) O(n*log(n))
-O(2n + n2) O(2^n)
-O(5 + 3 + 1) O(1)
+O(n + 10)  // O(n)
+
+O(100 × n) // O(n)
+
+O(25)//  O(1)
+
+O(n2 + n3) // O(n^3)
+
+O(n + n + n + n) // O(n)
+
+O(1000 × log(n) + n) // O(log(n))
+
+O(1000 × n × log(n) + n) // O(n*log(n))
+
+O(2n + n2) // O(2^n)
+
+O(5 + 3 + 1) // O(1)
+
 
 Step Two: Calculating Time Complexity
 
@@ -19,7 +28,7 @@ function logUpTo(n) {
   }
 }
 
-O(n)
+// O(n)
 
 function logAtLeast10(n) {
   for (let i = 1; i <= Math.max(n, 10); i++) {
@@ -27,8 +36,8 @@ function logAtLeast10(n) {
   }
 }
 
-If n <=10 O(1)
-If n >10 O(1)
+// O(n)
+
 
 function logAtMost10(n) {
   for (let i = 1; i <= Math.min(n, 10); i++) {
@@ -36,7 +45,7 @@ function logAtMost10(n) {
   }
 }
 
-O(1)
+// O(1)
 
 function onlyNumsAtEvenIndexes(nums) {
   let numsAtEvens = [];
@@ -50,7 +59,7 @@ function onlyNumsAtEvenIndexes(nums) {
   return numsAtEvens;
 }
 
-O(n)
+// O(n)
 
 function runningSubtotals(nums) {
   let subtotals = [];
@@ -66,7 +75,7 @@ function runningSubtotals(nums) {
   return subtotals;
 }
 
-O(n)
+// O(n^2) //triangular runtime
 
 const VOWELS = "aeiouAEIOU";
 
@@ -85,9 +94,31 @@ function vowelsCounts(word) {
 
   return vowelsToCounts;
 }
-O(n)? O(n^2)?
+
+// O(n)
 
 
+True or false: n2 + n is O(n2). // True
+
+True or false: n2 * n is O(n^3). // True 
+
+True or false: n2 + n is O(n). // False
+
+What’s the time complexity of the .indexOf array method? // O(n)
+
+What’s the time complexity of the .includes array method? // O(n)
+
+What’s the time complexity of the .every array method? // 0(n)
+
+What’s the time complexity of the .sort array method? // O(nlogn)
+
+What’s the time complexity of the .unshift array method? // O(n) //need to shift each value one index value (same w .shift())
+
+What’s the time complexity of the .push array method? // O(1)
+
+What’s the time complexity of the .pop array method? // O(1)
+
+What’s the time complexity of the Object.keys() function? // O(n)
 
 
 
